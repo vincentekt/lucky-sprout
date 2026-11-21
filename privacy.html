@@ -5,27 +5,30 @@
 <header><a href="./"><img src="icon.jpg" alt="">Lucky Sprout</a></header>
 <main><div class="card">
 <h1>Lucky Sprout privacy policy</h1>
-<p><i>Last updated: 7 November 2026</i></p>
+<p><i>Last updated: 21 November 2026</i></p>
 <p>Lucky Sprout is a gardening game. This policy explains what the game stores, why, and how to delete it.</p>
 <h2>What we store</h2>
 <ul>
 <li><b>An anonymous player account.</b> On first launch the game creates an anonymous account with Google Firebase. It is a random ID, not linked to your name, email or phone number.</li>
-<li><b>Your public garden.</b> So other players can visit it and see the rankings, the game publishes your garden: its name (put together from a fixed word list, never typed text), your crops, pets, decorations, level and scores such as coins earned. Other players can see this.</li>
+<li><b>Your public garden.</b> So other players can visit it and see the rankings, the game publishes your garden: its name, your crops, pets, level and scores such as coins earned. Other players can see this.</li>
+<li><b>A garden name you write (optional).</b> Your garden starts with a name put together from a fixed word list. You can write your own instead (3 to 16 letters, numbers and spaces), which other players see on your garden and in the rankings. Please don't use your full name or anything that identifies you. To keep names friendly, every name players write is sent, with no ID or other details, to Anthropic's Claude (through the OpenLux API service) for an automatic check; a name it finds unsuitable is removed. A name can be changed once every 30 days.</li>
+<li><b>Reports.</b> You can report another player's written name. The report records your anonymous ID, the garden you reported and the name, and is deleted once the name has been checked. A record of each name that was removed or reported (the name, the garden's anonymous ID and the decision) is kept so decisions can be reviewed.</li>
 <li><b>Likes and waterings.</b> When you like or water a garden, the game records your anonymous ID and garden name with it, so each player can only like a garden once and water it once a day, and the owner can see who watered.</li>
 <li><b>Market sales and shared strains.</b> How many of each crop players sell each hour is counted together, without saying who sold them, so prices can follow supply. Hybrid strains you choose to share in the Seed Bank are published with your anonymous ID, their parent crops and star ratings, and how many packs have sold.</li>
 <li><b>A cloud backup of your game.</b> Your game progress is backed up to Firebase under a restore code shown in Settings, so you can bring it back on a new phone. Anyone who knows that code can restore the garden, so keep it private.</li>
-<li><b>Game Center.</b> If you use Game Center, Apple shares your scores with its leaderboards under Apple's own privacy policy.</li>
-<li><b>Purchases.</b> Coin packs are bought through Apple. We never see your payment details.</li>
+<li><b>Your home area (optional).</b> You can pick a country and a town or city district to race other players there each week. Other players see it on your garden and in the local rankings. If you tap <b>📍 Detect</b>, the game asks your phone once for an <i>approximate</i> location, finds the nearest town on the phone itself, and then forgets the location: only the town is stored and shared, never where you are. You can pick your area by hand instead, or not pick one at all.</li>
+<li><b>Game Center (iPhone).</b> If you use Game Center, Apple shares your scores with its leaderboards under Apple's own privacy policy.</li>
+<li><b>Purchases.</b> Coin packs, Garden Themes and Effect Packs are bought through Apple on iPhone or Google Play on Android. We never see your payment details.</li>
 </ul>
-<p>We do not collect your name, email address, location, contacts or advertising identifiers. There are no ads and no tracking across other apps or websites.</p>
+<p>We do not collect your name, email address, precise location, contacts or advertising identifiers. There are no ads and no tracking across other apps or websites.</p>
 <h2>How it's used</h2>
-<p>Only to run the game: showing gardens to visit, the rankings, likes, and restoring your progress. We don't sell or share your data with anyone else.</p>
+<p>Only to run the game: showing gardens to visit, the rankings, likes, and restoring your progress. We don't sell your data or share it with anyone else, apart from the automatic name check described above.</p>
 <h2>Where it's kept</h2>
-<p>In Google Firebase (Cloud Firestore and Firebase Authentication), which stores data on Google's servers.</p>
+<p>In Google Firebase (Cloud Firestore and Firebase Authentication), which stores data on Google's servers. Name checks run on Cloudflare Workers and Anthropic's Claude, reached through the OpenLux API service; only the names themselves are sent.</p>
 <h2>Deleting your data</h2>
-<p>In the game, open <b>Settings → Delete my account</b>. This deletes your published garden, your shared strains, your cloud backup, your anonymous account and the game on your phone. It can't be undone.</p>
+<p>In the game, open <b>Settings → Delete my account</b>. This deletes your published garden, your shared strains, your cloud backup, your anonymous account and the game on your phone. It can't be undone. Records of moderation decisions about written names are kept.</p>
 <h2>Children</h2>
-<p>Lucky Sprout doesn't ask for personal information, and players can't send each other messages or free text.</p>
+<p>Lucky Sprout doesn't ask for personal information, and players can't send each other messages. The only text players can write is their garden name, which is filtered on the phone, checked automatically, and can be reported by other players.</p>
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="https://github.com/vincentekt/lucky-sprout/issues/new">contact us</a>, or see our <a href="support.html">support page</a>.</p>
 </div></main>
